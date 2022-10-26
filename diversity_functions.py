@@ -158,7 +158,7 @@ def dc_evenness(dict):
 
 def dc_resultString(dict):    
     result = ""
-    for category, summary in dct.items():
+    for category, summary in dict.items():
         result += "{}: {}  {:2.3f}  {:2.3f}  {:2.3f}\n".format(category, dc_richness(summary), dc_shannons(summary), dc_simpsons(summary), dc_evenness(summary))
     return result
     
